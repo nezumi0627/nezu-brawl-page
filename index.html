@@ -8,27 +8,33 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-        }
-
-        #stats {
-            margin-top: 20px;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 20px;
         }
 
         .stat {
-            font-size: 1.2em;
-            margin: 5px;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
-    <h1>Brawl Stars Stats</h1>
-    <button onclick="fetchStats()">戦績を表示</button>
-    <div id="stats">
-        <!-- 戦績がここに表示されます -->
-    </div>
+    <h1>Brawl Stars プレイヤー戦績</h1>
+    <button onclick="fetchStats()">戦績を取得</button>
+    <div id="stats"></div>
+
     <script src="script.js"></script>
 </body>
 
